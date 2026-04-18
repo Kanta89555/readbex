@@ -1,13 +1,5 @@
-import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
 export default function HomePage() {
-  return (
-    <main>
-      <h1>Home</h1>
-      <p>Welcome to the starter app structure.</p>
-      <p>
-        <Link href="/login">ログインページへ</Link>
-      </p>
-    </main>
-  )
+  redirect('/login')
 }
